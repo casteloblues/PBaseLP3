@@ -1,0 +1,9 @@
+create table userlp3(
+    id_user BIGINT not null primary key generated always as identity (start with 1, increment by 1),
+    username varchar(10) not null,
+    password varchar(32) not null
+);
+
+insert into userlp3(username, password) values ('castelo', '123');
+
+select * from userlp3;
